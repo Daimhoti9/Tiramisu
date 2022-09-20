@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recet Gatimi</title>
+    <style>
+      body { background-color:blanchedalmond; }
+      p { color:brown; }
+  </style>
 </head>
 <body>
     
@@ -143,20 +147,124 @@ Dark rum is best, but you can use brandy or your favorite coffee liqueur.
 <br><br>
 
 
-<adresse>
+
 
 <p>
+ <form method="GET">
+ <strong> Order down below
+</strong></p>
 
-Recet e gatuar nga Dahim Hoti<br>
-
-
-
-Per me shume pytje rreth recetes ju lutem te me kontaktini permes faqes sime se Facebook <a href=“…..“ _blank >Receta Tradiocionale </a>
-
+<fieldset>
+  <legend>Log in</legend>
+ 
+  <p>Username:
+ <input type="text" name="username"     size="10" maxlength="15"  required/>
 </p>
 
-</adresse>
+<p>Password:
+  <input type="password" name="password" id="password"  maxlength="15" min="9" required></p>
+ 
+  <input type="submit"  />
+  <button type="reset">Reset</button>
+</fieldset><br>
 
+
+<fieldset>
+  <legend>Location</legend>
+  <label for="Distanc in km">Distanc in km</label>
+  <input type="range" name="Distanc in km" id="Distanc in km" min="0" max="10" value="1" step="1" required>
+
+
+</fieldset><br> 
+
+
+<fieldset>
+  <legend>Order</legend>
+   
+  <p>
+       <figcaption>
+       <img src="tiramisu order.jpg" alt="1"  height="150" />
+       <p>Homemade Tiramisu</p>
+      </p>
+    </figcaption>
+  
+      
+       <p> What type of packaging:
+        <input type="radio" name="genre" value="Paper" 
+        /> Paper
+        <input type="radio" name="genre" value="Plastic" /> Plastic     
+       <input type="radio" name="genre" value="Glass" /> Glass
+     </p>
+       
+
+           
+       <p> Extras:
+      <input type="radio" name="genre" value="extra milk" 
+      /> Extra milk
+       <input type="radio" name="genre" value="extra coffe" /> Extra Coffe
+      </p>
+      <p><label for="Size">Size</label>
+        <select name="Size" id="Size">
+        <option value="L">Large</option>
+        <option value="M">Medium</option>
+       <option value="S">Small</option>
+        </p>
+         
+      
+
+    <p>
+        <input type="checkbox" name="Delivery Time" value="Normal" id="normal" required />
+        <label for="normal">Normal Delivery</label><br>
+        <input type="checkbox" name="Delivery Time" value="Express" id="express"  />
+        <label for="express">Express Delivery</label>
+      </p>
+      
+    
+         
+      
+         
+
+
+</fieldset><br>
+
+
+
+<fieldset>
+  <legend>Contact Details</legend>
+  <label>Email:<br />
+  <input type="text" name="email" required/></label><br />
+  <label>Mobile:<br />
+    <input type="tel" name="mob"  required="" pattern="\d{9}" required>
+     
+ 
+
+
+</fieldset><br>
+
+<fieldset>
+  <legend>Payment</legend>
+  
+  <strong>Wich way of payment would you like to use?</strong><br><br>
+     <label for="Payment">Payment</label>
+     <select name="Payment" id="Payment">
+     <option value="paypal">Paypal</option>
+     <option value="mastercard">Master Card</option>
+     <option value="visacard">Visa Card</option>
+    
+    </select>
+
+   
+  
+
+
+</fieldset><br>
+ 
+<fieldset>
+  <button type="submit">Place Order</button>
+
+</fieldset>
+
+</form>
 </table>
 </body>
 </html>
