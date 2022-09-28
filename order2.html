@@ -31,7 +31,7 @@
        
       
 
-       <fieldset class=" left">
+       <fieldset class=" left b2">
        <legend>Contact Details</legend>
        <p>
         <label>Email:
@@ -40,32 +40,32 @@
           <input type="tel" name="mob"  required="" pattern="\d{9}" required/><br></p>
         </fieldset>
        
-       <fieldset class=" left ">
+       <fieldset class=" left b2">
        
              
-         <legend>Order</legend>
+         <legend >Order</legend>
           
          <p>
               <figcaption>
-              <img src="./assets/tiramisu order.jpg" alt="1"  height="150" />
+              <img  class="image"    src="./assets/tiramisu order.jpg" alt="1"  height="150" />
               <p>Homemade Tiramisu</p>
              </p>
            </figcaption>
          
              
               <p> What type of packaging:
-               <input type="radio" name="genre" value="Paper" 
+               <input type="radio" name="genre" value="Paper" required
                /> Paper
-               <input type="radio" name="genre" value="Plastic" /> Plastic     
-              <input type="radio" name="genre" value="Glass" /> Glass
+               <input type="radio" name="genre" value="Plastic" required/> Plastic     
+              <input type="radio" name="genre" value="Glass" required/> Glass
             </p>
              
              <p>
                 <label for="Size">Size </label>
-               <select name="Size" id="Size">
-               <option value="L">Large <br></option>
-               <option value="M">Medium <br></option>
-              <option value="S">Small <br></option><br>
+               <select name="Size" id="Size" required>
+               <option value="L" required>Large <br> </option>
+               <option value="M" required>Medium <br></option>
+              <option value="S" required>Small <br></option><br>
               </p>
               
        
