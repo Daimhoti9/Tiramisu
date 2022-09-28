@@ -1,7 +1,8 @@
  body{
 
     font-size: 18px;
-    background-color:whitesmoke;
+    background-color:whitesmoke ;
+    margin-left: auto;
 } 
 
 
@@ -21,7 +22,9 @@
 
     border: 40xp 20xp 20xp 30xp; 
     padding: 40xp 20xp;
-    margin: 40px auto;
+    margin: 50px auto;
+    /* margin-left: 320px; */
+    
 
 }
 
@@ -41,8 +44,8 @@
 
 .position {
 
-    
-    margin-left: 450px ;
+    margin-top: 50px;
+    margin-left: 350px ;
     margin-bottom: 100px;
     
 }
@@ -64,8 +67,8 @@
 
 .position2 {
 
-    
-    margin-left: 310px ;
+    margin-top: 80px;
+    margin-left: 220px ;
     margin-bottom: 110px;
     
 }
@@ -74,5 +77,88 @@
 .image {
 
 
-    border: 4px dotted black;
+    border: 1px  black;
+    padding: 5px 5px ;
+    box-shadow: -7px 0px 15px 4px rgba(0,0,0,0.85)
+    ;
+}
+
+.font1{
+
+   font-size: 75px;
+   font-style: italic;
+
+}
+
+.container{
+
+     width: 80%;
+     margin: 0 auto ;
+
+
+}
+
+
+.logo {
+ 
+    float: left;
+    padding: 10px 0;
+
+}
+
+.header{
+
+    background-color: brown ;
+}
+
+header::after{
+
+     content: '';
+    display: table; 
+    clear: both;
+    
+
+    
+
+}
+
+ nav {
+
+    float: right;
+} 
+
+  nav ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} 
+
+nav li {
+
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 90px ;
+
+}
+
+
+nav a {
+
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+nav a:hover {
+
+    color: bisque;
+}
+
+
+
+.image4{
+
+
+    margin-left: 80px;
 }
